@@ -202,7 +202,7 @@ export async function createServerlessEventHandler(
     });
 
     let body: Readable | Buffer | null = null;
-    let headers = toHeaders(response.headers) as Headers;
+    const headers = toHeaders(response.headers) as Headers;
 
     if (isStreaming) {
       body = response.body;
