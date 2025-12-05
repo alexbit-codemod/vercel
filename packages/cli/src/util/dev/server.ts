@@ -1786,7 +1786,7 @@ export default class DevServer {
         get() {
           return statusCode;
         },
-        /* eslint-disable @typescript-eslint/no-unused-vars */
+        
         set(_: number) {
           /* ignore */
         },
